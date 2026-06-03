@@ -1,1 +1,27 @@
 
+Algoritmo Eje1_facturacion 
+		// Definición de variables
+		Definir precio_base, monto_iva, subtotal_iva Como Real
+		Definir monto_aduana, subtotal_aduana, descuento, precio_final Como Real
+		
+		// Entrada de datos
+		Escribir "Ingrese el precio base del componente:"
+		Leer precio_base
+		
+		// Cálculos en cascada
+		monto_iva <- precio_base * 0.21
+		subtotal_iva <- precio_base + monto_iva
+		
+		monto_aduana <- subtotal_iva * 0.08
+		subtotal_aduana <- subtotal_iva + monto_aduana
+		
+		descuento <- subtotal_aduana * 0.05
+		precio_final <- subtotal_aduana - descuento
+		
+		// Salida de resultados
+		Escribir "Monto del IVA: $ ", monto_iva
+		Escribir "Monto de la tasa de aduana: $ ", monto_aduana
+		Escribir "Descuento aplicado: $ ", descuento
+		Escribir "Precio final neto en efectivo: $ ", precio_final
+
+	
