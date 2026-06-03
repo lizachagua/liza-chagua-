@@ -1,0 +1,10 @@
+Algoritmo eje2_Calculadora_TiempoDescarga
+		// Declaracion de variables
+		Definir tamañoGB, velocidadMbps,totalMegabits, segundosTotales Como Real;
+		Escribir "Ingrese el tamano del archivo en Gigabytes (GB):";
+		Leer tamañoGB;
+		Escribir "Ingrese la velocidad de descarga en Megabits por segundo (Mbps):";
+		Leer velocidadMbps;
+		totalMegabits <- tamanoGB * 1024 * 8;
+		segundosTotales <- totalMegabits / velocidadMbps;
+		Escribir "El tiempo estimado de descarga es de: ", segundosTotales, " segundos.";
